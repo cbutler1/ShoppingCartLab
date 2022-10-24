@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+</head>
+<style>
+    #wrapper { 
+    display: flex;
+    } 
+li{ 
+    width: 200px; 
+    height: 30px; 
+    list-style: none; 
+    background-color: rgb(1, 4, 49); 
+    border-radius: 10px; 
+    margin: 5px; 
+    padding: 5px; 
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+#badge {
+     width: 20px; 
+     height: 20px; 
+     background-color: #f0ad4e; 
+     color: white; 
+     padding: 2px 2px; 
+     border-radius: 5px; 
+     margin-left: 10px; 
+     text-align: center; 
+     float: right; 
+     } 
+#items #badge { /* hides the count badge on the shopping list */ 
+    display: none; 
+} 
+#container { 
+    margin: 50px;
+} 
+</style>
+<body>
+    <h2>Welcome to the Store!</h2>
+    <h3>Please take a look and click on an item to add it to your cart.</h3>
+    <h6>(sales tax excluded, discounts <i>cannot</i> be stacked)</h6>
+
+<div id="container">
+    <h3>Shopping List</h3>
+    <div id="items"></div>
+</div>
+
+
+<div id="container">
+    <h3>Cart</h3>
+    <div id="cart"></div>
+</div>
+<script src="./script.js"></script>
+
+</body>
+</html>
